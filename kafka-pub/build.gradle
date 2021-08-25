@@ -1,0 +1,19 @@
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.kafka:spring-kafka'
+	implementation 'org.springframework.boot:spring-boot-starter-aop'
+	implementation 'com.h2database:h2'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.1'
+	implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
+	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+	implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+
+	testImplementation 'org.springframework.kafka:spring-kafka-test'
+}
+

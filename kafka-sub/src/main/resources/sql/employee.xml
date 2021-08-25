@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.example.sub.repository.EmpRepository">
+    <select id="selectEmpList" resultType="com.example.common.EmpDTO">
+ 		SELECT EMPNO, EMPNAME, DEPTNO
+ 		FROM TB_EMP
+ 	</select>
+
+    <insert id="insertEmp" parameterType="com.example.common.EmpDTO">
+ 		INSERT INTO TB_EMP(EMPNO, EMPNAME,  DEPTNO)
+ 		VALUES(#{empNO}, #{empName}, #{deptNo})
+ 	</insert>
+
+</mapper>

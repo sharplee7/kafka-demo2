@@ -21,7 +21,7 @@ public class PublisherController {
         if(empService.insertEmp(empDTO) == 1) {
             return new ResponseEntity<>("success", HttpStatus.OK);
         } else {
-            return new ResponseEntity<>("fail", HttpStatus.OK);
+            return new ResponseEntity<>("fail", HttpStatus.BAD_REQUEST);
         }
     }
 

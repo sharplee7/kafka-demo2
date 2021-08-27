@@ -41,3 +41,5 @@
    3. [GET] /employee 를 다시 실행해 데이터가 2건 등록되어 있는 것을 확인한다.
 2. http://localhost:8080/sub/swagger-ui.html 호출
    1. [GET] /employee 를 클릭해 try it out >> Execute 를 실행해 pub서비스에서 방금 입력한 데이터 1건이 전송되어 온것을 확인한다.
+
+ref: https://blog.jiniworld.me/83

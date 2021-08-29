@@ -27,7 +27,7 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("Kafka Demo")
-                .description("Kafka Pub/Sub Demo Swagger")
+                .description("Kafka Pub Demo Swagger")
                 .version("1.0")
                 .build();
     }

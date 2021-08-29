@@ -61,4 +61,15 @@ public class Book {
     public void setCost(Double cost) {
         this.cost = cost;
     }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", pages=" + pages +
+                ", author='" + author + '\'' +
+                ", cost=" + cost +
+                '}';
+    }
 }

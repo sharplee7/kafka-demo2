@@ -5,6 +5,8 @@ import com.example.common.EmpDTO;
 import com.example.sub.service.EmpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -43,6 +45,10 @@ public class SubscriberController {
         mongoTemplate.save(new Book(509, "Java Design Patterns", 114, "Devendra Singh", 919.99));
 
         System.out.println("------All records has been saved successfully-------");
+
+        List<Book> list = mongoTemplate.findAll(Book.class);
+
+        System.out.println(list);
     }
 
 }

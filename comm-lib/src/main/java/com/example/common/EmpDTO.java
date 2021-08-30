@@ -31,8 +31,6 @@ public class EmpDTO implements Serializable {
         this.empName = empName;
     }
 
-
-
     public String getDeptNo() {
         return deptNo;
     }

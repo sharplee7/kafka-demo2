@@ -5,8 +5,11 @@
 3. spring boot 2.2.6
 4. mybatis
 5. swagger 2.9
-6. h2db (in-memory)
-7. kafka_2.12-2.1.1 (https://archive.apache.org/dist/kafka/2.1.1/kafka_2.12-2.1.1.tgz)
+6. h2db (in-memory) 
+7. mongodb (in-memory)
+8. kafka_2.12-2.1.1 (https://archive.apache.org/dist/kafka/2.1.1/kafka_2.12-2.1.1.tgz)
+단, h2db는 git checkout 1.0-h2 으로 체크아웃해서 사용
+mongodb는 git checkout 2.0-mongo로 체크아웃해서 사용
 
 ###개발환경 구성
 1. git clone <url> 으로 개발소스 복제
@@ -42,4 +45,3 @@
 2. http://localhost:8080/sub/swagger-ui.html 호출
    1. [GET] /employee 를 클릭해 try it out >> Execute 를 실행해 pub서비스에서 방금 입력한 데이터 1건이 전송되어 온것을 확인한다.
 
-ref: https://blog.jiniworld.me/83

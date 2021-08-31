@@ -1,7 +1,7 @@
 package com.example.sub.controller;
 
 
-import com.example.common.EmpDTO;
+import com.example.sub.domain.EmpDTO2;
 import com.example.sub.service.EmpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,8 +18,8 @@ public class SubscriberController {
     EmpService empService;
 
     @GetMapping(value = "/employee")
-    public ResponseEntity<List<EmpDTO>> select() throws Exception {
-        List<EmpDTO> list = empService.getEmpList();
+    public ResponseEntity<List<EmpDTO2>> select() throws Exception {
+        List<EmpDTO2> list = empService.getEmpList();
         return new ResponseEntity<>(list, HttpStatus.OK);
     }
 

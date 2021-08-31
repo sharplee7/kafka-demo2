@@ -2,10 +2,11 @@ package com.example.sub.service;
 
 
 import com.example.common.EmpDTO;
+import com.example.sub.domain.EmpDTO2;
 
 import java.util.List;
 
 public interface EmpService {
-    public int insertEmp(EmpDTO empDTO) throws Exception;
-    public List<EmpDTO> getEmpList() throws Exception;
+    public int insertEmp(EmpDTO2 empDTO) throws Exception;
+    public List<EmpDTO2> getEmpList() throws Exception;
 }

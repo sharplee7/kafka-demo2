@@ -1,6 +1,7 @@
 package com.example.sub.service;
 
 import com.example.common.EmpDTO;
+import com.example.sub.domain.EmpDTO2;
 import com.example.sub.repository.EmpRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -14,7 +15,7 @@ public class EmpServiceImpl implements EmpService{
 
 
     @Override
-    public int insertEmp(EmpDTO empDTO) throws Exception {
+    public int insertEmp(EmpDTO2 empDTO) throws Exception {
         int ret = 0;
 
         if(empRepository.insertEmp(empDTO) >= 1) {
@@ -25,7 +26,7 @@ public class EmpServiceImpl implements EmpService{
     }
 
     @Override
-    public List<EmpDTO> getEmpList() throws Exception {
+    public List<EmpDTO2> getEmpList() throws Exception {
         return empRepository.selectEmpList();
     }
 }

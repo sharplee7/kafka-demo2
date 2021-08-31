@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebConfig implements WebMvcConfigurer {
 
     /**
-     * CORS 해결을 위한 mapping
+     * CORS Issue
      * @param registry
      */
     @Override

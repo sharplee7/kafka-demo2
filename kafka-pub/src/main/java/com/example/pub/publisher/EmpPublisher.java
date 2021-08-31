@@ -1,4 +1,4 @@
-package com.example.pub.publish;
+package com.example.pub.publisher;
 
 import com.example.common.EmpDTO;
 import org.springframework.beans.factory.annotation.Autowired;

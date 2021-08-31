@@ -24,6 +24,7 @@ public class KafkaConsumerConfig {
     private String bootstrapAddress;
 
     public ConsumerFactory<String, EmpDTO2> empConsumerFactory() {
+        // Pub에서 보낸 DTO의 패키지 구조에 상관 없이 전송 받을 수 있도록 TrustedPackage 설정
         JsonDeserializer<EmpDTO2> deserializer = new JsonDeserializer<>(EmpDTO2.class);
         deserializer.setRemoveTypeHeaders(false);
         deserializer.addTrustedPackages("*");

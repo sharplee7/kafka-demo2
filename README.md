@@ -1,4 +1,7 @@
 # kafka-demo
+![](images/tag-v2.0-mongo.png)
+
+
 ###사용 환경
 1. jdk 1.8 
 2. gradle

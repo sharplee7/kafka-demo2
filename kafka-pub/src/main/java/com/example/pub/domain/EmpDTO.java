@@ -1,7 +1,5 @@
 package com.example.pub.domain;
 
-import java.io.Serializable;
-
 public class EmpDTO {
     private String empNO=null;
     private String empName = null;

@@ -1,4 +1,18 @@
 # kafka-demo
+##시나리오
+![](images/tag-v1.0-h2.png)
+1. Publish
+   1. http://localhost:8080/pub/swagger-ui/에 접속해 EmpDTO 내용 등록(empNo, empName, detpNo)
+   2. EmpService의 insertEmp 호출, EmpService는 EmpDTO 등록시, EmpRepository를 통해 H2DB에 EMP 내용 등록 및 EmpPublisher를 통해 Kafka로 EmpDTO 내용 publish
+   3. EmpRepository를 통해 H2DB에 EmpDTO 등록
+   4. EmpPublisher를 통해 Kafka에 EmpDTO Publish
+   5. Kafka로 EmpDTO 내용 Sirialize 시켜 전달
+2. Subscribe
+   6. Kafka에 EmpDTO 신규 등록 내용 캐치
+   7. EmpSubscriber가 Kafka에 신규 등록된 EmpDTO Subscribe
+   8. EmpSubscriber가 EmpService를 호출 해 insertEmp(EmpDTO) 실행
+   9. EmpService를 통해 EmpDTO를 H2DB에 등록
+
 ###사용 환경
 1. jdk 1.8
 2. gradle
@@ -37,12 +51,10 @@
 3. kafka-demo/kafka-pub/src/main/java/KafkaPubApplication을 찾아 실행
 4. kafka-demo/kafka-sub/src/main/java/KafkaSubApplication을 찾아 실행
 
-### 프로그램 테스트
+###프로그램 테스트
 1. http://localhost:8080/pub/swagger-ui.html 호출
    1. [GET] /employee 를 클릭해 try it out >> Execute 를 실행해 데이터가 1건 등록되어 있는 것을 확인한다.(기본으로 한 건 등록되어 있다.)
    2. [POST] /employee 를 클릭해 try it out >> Execute 를 실행해 임의의 데이터를 넣고 저장한다.
    3. [GET] /employee 를 다시 실행해 데이터가 2건 등록되어 있는 것을 확인한다.
 2. http://localhost:8080/sub/swagger-ui.html 호출
    1. [GET] /employee 를 클릭해 try it out >> Execute 를 실행해 pub서비스에서 방금 입력한 데이터 1건이 전송되어 온것을 확인한다.
-
-ref: https://blog.jiniworld.me/83

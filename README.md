@@ -1,12 +1,15 @@
 # kafka-demo
 ###사용 환경
-1. jdk 1.8 
+1. jdk 1.8
 2. gradle
 3. spring boot 2.2.6
 4. mybatis
 5. swagger 2.9
 6. h2db (in-memory)
-7. kafka_2.12-2.1.1 (https://archive.apache.org/dist/kafka/2.1.1/kafka_2.12-2.1.1.tgz)
+7. mongodb (in-memory)
+8. kafka_2.12-2.1.1 (https://archive.apache.org/dist/kafka/2.1.1/kafka_2.12-2.1.1.tgz)
+   단, h2db는 git checkout 1.0-h2 으로 체크아웃해서 사용
+   mongodb는 git checkout 2.0-mongo로 체크아웃해서 사용
 
 ###개발환경 구성
 1. git clone <url> 으로 개발소스 복제

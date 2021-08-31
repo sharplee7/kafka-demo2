@@ -2,16 +2,16 @@
 ##시나리오
 ![](images/tag-v1.0-h2.png)
 1. Publish
-   1. http://localhost:8080/pub/swagger-ui/에 접속해 EmpDTO 내용 등록(empNo, empName, detpNo)
-   2. EmpService의 insertEmp 호출, EmpService는 EmpDTO 등록시, EmpRepository를 통해 H2DB에 EMP 내용 등록 및 EmpPublisher를 통해 Kafka로 EmpDTO 내용 publish
-   3. EmpRepository를 통해 H2DB에 EmpDTO 등록
-   4. EmpPublisher를 통해 Kafka에 EmpDTO Publish
-   5. Kafka로 EmpDTO 내용 Sirialize 시켜 전달
-2. Subscribe
-   6. Kafka에 EmpDTO 신규 등록 내용 캐치
-   7. EmpSubscriber가 Kafka에 신규 등록된 EmpDTO Subscribe
-   8. EmpSubscriber가 EmpService를 호출 해 insertEmp(EmpDTO) 실행
-   9. EmpService를 통해 EmpDTO를 H2DB에 등록
+   1. http://localhost:8080/pub/swagger-ui/에 접속해 EmpDTO 내용 등록(empNo, empName, detpNo)  
+   2. EmpService의 insertEmp 호출, EmpService는 EmpDTO 등록시, EmpRepository를 통해 H2DB에 EMP 내용 등록 및 EmpPublisher를 통해 Kafka로 EmpDTO 내용 publish  
+   3. EmpRepository를 통해 H2DB에 EmpDTO 등록  
+   4. EmpPublisher를 통해 Kafka에 EmpDTO Publish  
+   5. Kafka로 EmpDTO 내용 Sirialize 시켜 전달  
+2. Subscribe  
+   6. Kafka에 EmpDTO 신규 등록 내용 캐치  
+   7. EmpSubscriber가 Kafka에 신규 등록된 EmpDTO Subscribe  
+   8. EmpSubscriber가 EmpService를 호출 해 insertEmp(EmpDTO) 실행  
+   9. EmpService를 통해 EmpDTO를 H2DB에 등록  
 
 ###사용 환경
 1. jdk 1.8

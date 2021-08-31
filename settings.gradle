@@ -9,5 +9,4 @@
 rootProject.name = 'kafka-demo'
 include 'kafka-pub'
 include 'kafka-sub'
-include 'comm-lib'
 

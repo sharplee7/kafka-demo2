@@ -1,7 +1,7 @@
 package com.example.pub.controller;
 
 
-import com.example.common.EmpDTO;
+import com.example.pub.domain.EmpDTO;
 import com.example.pub.service.EmpService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

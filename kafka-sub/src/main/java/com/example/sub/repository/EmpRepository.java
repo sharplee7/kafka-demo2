@@ -1,6 +1,5 @@
 package com.example.sub.repository;
 
-import com.example.common.EmpDTO;
 import com.example.sub.domain.EmpDTO2;
 import org.apache.ibatis.annotations.Mapper;
 

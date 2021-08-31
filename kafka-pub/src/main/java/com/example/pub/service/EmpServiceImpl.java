@@ -1,6 +1,6 @@
 package com.example.pub.service;
 
-import com.example.common.EmpDTO;
+import com.example.pub.domain.EmpDTO;
 import com.example.pub.publisher.EmpPublisher;
 import com.example.pub.repository.EmpRepository;
 import org.springframework.beans.factory.annotation.Autowired;

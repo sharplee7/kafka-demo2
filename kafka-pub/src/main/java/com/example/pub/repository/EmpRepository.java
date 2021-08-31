@@ -1,6 +1,6 @@
 package com.example.pub.repository;
 
-import com.example.common.EmpDTO;
+import com.example.pub.domain.EmpDTO;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

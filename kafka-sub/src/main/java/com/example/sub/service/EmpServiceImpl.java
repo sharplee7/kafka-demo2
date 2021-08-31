@@ -1,6 +1,5 @@
 package com.example.sub.service;
 
-import com.example.common.EmpDTO;
 import com.example.sub.domain.EmpDTO2;
 import com.example.sub.repository.EmpRepository;
 import org.springframework.beans.factory.annotation.Autowired;

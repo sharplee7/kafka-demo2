@@ -1,6 +1,6 @@
 package com.example.pub.publisher;
 
-import com.example.common.EmpDTO;
+import com.example.pub.domain.EmpDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;

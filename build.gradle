@@ -35,13 +35,13 @@ subprojects {
 }
 
 project(':kafka-pub') {
-    dependencies {
-        implementation project(':comm-lib')
-    }
+//    dependencies {
+//        implementation project(':comm-lib')
+//    }
 }
 
 project(':kafka-sub') {
-    dependencies {
-        implementation project(':comm-lib')
-    }
+//    dependencies {
+//        implementation project(':comm-lib')
+//    }
 }

@@ -1,7 +1,6 @@
 package com.example.sub.service;
 
 
-import com.example.common.EmpDTO;
 import com.example.sub.domain.EmpDTO2;
 
 import java.util.List;

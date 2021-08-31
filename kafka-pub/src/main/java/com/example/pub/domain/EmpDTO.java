@@ -1,8 +1,8 @@
-package com.example.common;
+package com.example.pub.domain;
 
 import java.io.Serializable;
 
-public class EmpDTO implements Serializable {
+public class EmpDTO {
     private String empNO=null;
     private String empName = null;
     private String deptNo = null;

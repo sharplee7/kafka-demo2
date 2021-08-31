@@ -1,4 +1,4 @@
-package com.example.sub.subscribe;
+package com.example.sub.subscriber;
 
 import com.example.common.EmpDTO;
 import com.example.sub.service.EmpService;

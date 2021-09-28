@@ -40,7 +40,7 @@ project(':kafka-pub') {
 //    }
 }
 
-project(':kafka-sub') {
+project(':kafka-sub1') {
 //    dependencies {
 //        implementation project(':comm-lib')
 //    }
